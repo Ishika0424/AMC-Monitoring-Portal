@@ -1,7 +1,19 @@
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 public class PersonnelDashboard extends JFrame {
     private JPanel mainPanel; // Content area
@@ -45,7 +57,7 @@ mainPanel.add(new AlertsPanel(), "Alerts");
             JButton btn = new JButton(label);
             btn.setFocusPainted(false);
             btn.setFont(new Font("Arial", Font.BOLD, 14));
-            btn.setForeground(Color.WHITE);
+            btn.setForeground(Color.BLACK);
             btn.setBackground(new Color(0, 128, 128));
             btn.setMargin(new Insets(10, 10, 10, 10));
             btn.addActionListener(new ActionListener() {
