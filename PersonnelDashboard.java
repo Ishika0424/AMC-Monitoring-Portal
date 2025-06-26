@@ -22,7 +22,7 @@ public class PersonnelDashboard extends JFrame {
         // Main panel setup with CardLayout
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
-        mainPanel.add(createContentPanel("Dashboard Overview (Coming Soon)"), "Dashboard Overview");
+        mainPanel.add(new DashboardOverviewPanel(), "Dashboard Overview ");
         mainPanel.add(new ViewDailyTasksPanel(), "View Daily Tasks");
  mainPanel.add(new ViewWeeklyTasksPanel(), "View Weekly Tasks");
 mainPanel.add(new ViewMonthlyTasksPanel(), "View Monthly Tasks");
